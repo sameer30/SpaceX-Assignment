@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="spacexpage">
+        <h1 class="title">SpaceX Launch Programs</h1>
+        <div class="missionData">
+            <div class="filterBox">
+                <div class="filterTitle"><span>Filters</span></div>
+                <div class="launchYear">
+                    <span>Launch Year</span><hr>
+                </div>
+                <div id="yearFilters" class="yearFilters"></div>
+                <div class="launchStatus">
+                    <span>Successful Launch</span>
+                    <hr>
+                </div>
+                <div id="launchFilters" class="launchFilters">
+                </div>
+                <div class="landingStatus">
+                    <span>Successful Landing</span>
+                    <hr>
+                </div>
+                <div id="landingFilters" class="landingFilters">
+                </div>
+            </div>
+            <div class="flightdata" id="flightinfos"></div>
+        </div>
+        <div class="developer"><b>Developed by:</b> Sameer Garg</div>
+    </div>
+    <script>
+        let launch_year = '{{launch_year}}';
+        let land_success = '{{land_success}}';
+        let launch_success = '{{launch_success}}';
+    </script>
+    <script src="spacex.js"></script>
+</body>
+</html>

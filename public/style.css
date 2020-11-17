@@ -1,0 +1,214 @@
+*, ::after, ::before {
+    boxSizing: 'border-box';
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    overflowX: 'hidden';
+}
+.spacexpage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.title {
+    font-size: 22px;
+    font-weight: 900;
+    margin: 0;
+}
+.missionData {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    min-height: 100vh;
+}
+.filterBox {
+    flex-basis: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+.filterTitle {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.flightdata{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flight {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    flex-basis: 100%;
+}
+.flight ul {
+    margin: 5px 0 10px 0;
+    padding-left: 30px;
+}
+.flight .imageContainer{
+    width: 70%;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.flight .missionDataContainer > div{
+    margin-top: 10px;
+}
+.flight .imageContainer .missionImage {
+    width: 100%;
+}
+.launchYear {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.launchStatus {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.landingStatus {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.yearFilters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px 20px 20px;
+}
+.yearFilters .year {
+    flex-basis: 30%;
+    background-color: lightgreen;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.yearFilters .year.selected{
+    background-color: limegreen;
+}
+.launchFilters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px 20px 20px;
+}
+.launchFilters .launchings {
+    flex-basis: 30%;
+    background-color: lightgreen;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.launchFilters .launchings.selected {
+    background-color: limegreen;
+}
+.landingFilters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px 20px 20px;
+}
+.landingFilters .landings {
+    flex-basis: 30%;
+    background-color: lightgreen;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.landingFilters .landings.selected {
+    background-color: limegreen;
+}
+.developer {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .title {
+        font-size: 28px;
+    }
+    .missionData {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .filterBox {
+        flex-basis: 25%;
+    }
+    .flightdata{
+        flex-basis: 75%;
+    }
+    .flight {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        flex-basis: calc(50% - 60px);
+    }
+    .yearFilters {
+        padding: 10px 10px;
+    }
+    .launchFilters {
+        padding: 10px 10px;
+    }
+    .landingFilters {
+        padding: 10px 10px;
+    }
+    .developer {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .title {
+        font-size: 28px;
+    }
+    .missionData {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .missionData {
+        flex-direction: row;
+    }
+    .filterBox {
+        flex-basis: 15%;
+    }
+    .flightdata{
+        flex-basis: 85%;
+    }
+    .flight {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        flex-basis: calc(25% - 60px);
+    }
+    .yearFilters {
+        padding: 10px 10px;
+    }
+    .launchFilters {
+        padding: 10px 10px;
+    }
+    .landingFilters {
+        padding: 10px 10px;
+    }
+    .developer {
+        font-size: 24px;
+    }
+}
